@@ -1,0 +1,30 @@
+# Ignore compiled Java class files
+/bin/
+*.class
+
+# Ignore local portable JDK (crucial to avoid uploading ~100MB of JDK files)
+/local-jdk/
+
+# Ignore automatically downloaded dependency libraries
+/lib/
+
+# Ignore SQLite database files generated at runtime
+# Note: The database is automatically created and seeded with default data when the application runs, 
+# so committing the runtime binary is not required and could cause locking conflicts.
+timetable.db
+timetable.db-journal
+timetable.db-wal
+timetable.db-shm
+
+# Ignore IDE specific folders and configurations
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+bin/
+
+# Temporary and build files
+*.log
+sources.txt
